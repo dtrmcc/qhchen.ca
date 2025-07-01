@@ -1,15 +1,15 @@
 baseURL = "https://qhchen.ca"
 languageCode = "en-us"
-title = "Dr. Qinghua Chen"
-theme = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
-
-[module]
-  [[module.imports]]
-    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
+title = "Dr. Qinghua Chen - Academic Portfolio"
 
 [params]
+  author = "Qinghua Chen"
   email = "me@qhchen.ca"
-  copyright = "© 2025 Qinghua Chen"
+  description = "Postdoctoral Fellow specializing in language education and poststructuralist theory"
+  orcid = "0000-0001-5212-2163"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [[menu.main]]
   name = "Home"
@@ -17,9 +17,21 @@ theme = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
   weight = 1
 
 [[menu.main]]
-  name = "CV"
-  url = "/uploads/cv.pdf"
+  name = "Publications"
+  url = "/publications/"
   weight = 2
 
-[markup.goldmark.renderer]
-  unsafe = true
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 3
+
+[[menu.main]]
+  name = "Teaching"
+  url = "/teaching/"
+  weight = 4
+
+[[menu.main]]
+  name = "CV"
+  url = "/uploads/cv.pdf"
+  weight = 5
