@@ -1,79 +1,26 @@
-baseURL: 'https://qhchen.ca'
-languageCode: 'en-us'
-title: 'Dr. Qinghua Chen'
+baseURL: "https://qhchen.ca"
+languageCode: "en-us"
+title: "Dr. Qinghua Chen"
+theme: "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
 
-# Hugo Modules
 module:
   imports:
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-cms/v5
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
+    - path: "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
 
-# Site Parameters
 params:
-  copyright: '© 2025 Qinghua Chen'
-  email: 'me@qhchen.ca'
-  phone: '+852 53867520'
-  orcid: '0000-0001-5212-2163'
-  
-  # Features
-  highlight: true
-  math: true
-  diagram: true
-  privacy_pack: false
-  
-  # SEO
-  site_type: Person
-  org_name: 'The Education University of Hong Kong'
-  
-  # Reading settings
-  reading_time: true
-  section_pager: false
-  sharing: true
-  
-  # Abstract length
-  abstract_length: 135
+  email: "me@qhchen.ca"
+  copyright: "© 2025 Qinghua Chen"
 
-# Menu Configuration
 menu:
   main:
-    - name: Home
-      url: '#about'
-      weight: 10
-    - name: Research
-      url: '#research'
-      weight: 20
-    - name: Publications
-      url: '#publications'
-      weight: 30
-    - name: Teaching
-      url: '#teaching'
-      weight: 40
-    - name: Projects
-      url: '#projects'
-      weight: 50
-    - name: Contact
-      url: '#contact'
-      weight: 60
-    - name: CV
-      url: '/uploads/cv.pdf'
-      weight: 70
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "CV"
+      url: "/uploads/cv.pdf"
+      weight: 2
 
-# Taxonomies
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
-
-# Security
-security:
-  enableInlineShortcodes: false
-
-# Markup
 markup:
   goldmark:
     renderer:
       unsafe: true
-  highlight:
-    style: github
-    lineNos: false
