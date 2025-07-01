@@ -1,4 +1,3 @@
-yaml# Hugo Configuration
 baseURL: 'https://qhchen.ca'
 languageCode: 'en-us'
 title: 'Dr. Qinghua Chen'
