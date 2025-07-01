@@ -2,15 +2,27 @@ baseURL = "https://qhchen.ca"
 languageCode = "en-us"
 title = "Dr. Qinghua Chen - Academic Portfolio"
 
+# Disable RSS feeds for specific sections
+disableKinds = ["RSS", "sitemap", "robotsTXT"]
+
+# Or alternatively, you can configure RSS more specifically:
+# rssLimit = 10
+# [outputs]
+#   home = ["HTML"]
+#   page = ["HTML"]
+#   section = ["HTML"]
+
 [params]
   author = "Qinghua Chen"
   email = "me@qhchen.ca"
   description = "Postdoctoral Fellow specializing in language education and poststructuralist theory"
   orcid = "0000-0001-5212-2163"
+  copyright = "© 2025 Dr. Qinghua Chen. All rights reserved."
 
 [markup.goldmark.renderer]
   unsafe = true
 
+# Menu configuration
 [[menu.main]]
   name = "Home"
   url = "/"
@@ -35,3 +47,9 @@ title = "Dr. Qinghua Chen - Academic Portfolio"
   name = "CV"
   url = "/uploads/cv.pdf"
   weight = 5
+
+# Permalinks
+[permalinks]
+  publication = "/publication/:title/"
+  research = "/research/:title/"
+  teaching = "/teaching/:title/"
