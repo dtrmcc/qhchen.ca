@@ -1,7 +1,6 @@
 baseURL: 'https://qhchen.ca'
 languageCode: 'en-us'
 title: 'Dr. Qinghua Chen'
-theme: 'github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-cms/v5'
 
 # Hugo Modules
 module:
@@ -11,19 +10,10 @@ module:
 
 # Site Parameters
 params:
-  # Basic Info
   copyright: '© 2025 Qinghua Chen'
-  
-  # Contact Info
   email: 'me@qhchen.ca'
   phone: '+852 53867520'
-  
-  # Social Media
-  twitter: ''
-  github: ''
-  linkedin: ''
   orcid: '0000-0001-5212-2163'
-  google_scholar: ''
   
   # Features
   highlight: true
@@ -31,35 +21,17 @@ params:
   diagram: true
   privacy_pack: false
   
-  # Site Features
-  cms:
-    branch: main
-    local_backend: false
-  
   # SEO
   site_type: Person
-  local_business_type: ''
   org_name: 'The Education University of Hong Kong'
   
-  # Reading time
+  # Reading settings
   reading_time: true
   section_pager: false
-  docs_section_pager: true
   sharing: true
-  copyright_license:
-    enable: false
   
   # Abstract length
   abstract_length: 135
-  
-  # Plugins
-  plugins_js: []
-  
-  # Maps
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
 
 # Menu Configuration
 menu:
@@ -96,10 +68,6 @@ taxonomies:
 # Security
 security:
   enableInlineShortcodes: false
-  funcs:
-    getenv:
-      - ^HUGO_
-      - ^WC_
 
 # Markup
 markup:
@@ -109,24 +77,3 @@ markup:
   highlight:
     style: github
     lineNos: false
-  tableOfContents:
-    startLevel: 2
-    endLevel: 3
-
-# Privacy
-privacy:
-  disqus:
-    disable: true
-  googleAnalytics:
-    disable: false
-    anonymizeIP: true
-  instagram:
-    disable: true
-  twitter:
-    disable: false
-    enableDNT: true
-  vimeo:
-    disable: true
-  youtube:
-    disable: false
-    privacyEnhanced: true
