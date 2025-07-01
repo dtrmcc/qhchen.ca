@@ -18,7 +18,7 @@ title = "Dr. Qinghua Chen - Academic Portfolio"
 
 [[menu.main]]
   name = "Publications"
-  url = "/publications/"
+  url = "/publication/"
   weight = 2
 
 [[menu.main]]
