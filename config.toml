@@ -1,0 +1,25 @@
+baseURL = "https://qhchen.ca"
+languageCode = "en-us"
+title = "Dr. Qinghua Chen"
+theme = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
+
+[module]
+  [[module.imports]]
+    path = "github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5"
+
+[params]
+  email = "me@qhchen.ca"
+  copyright = "© 2025 Qinghua Chen"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "CV"
+  url = "/uploads/cv.pdf"
+  weight = 2
+
+[markup.goldmark.renderer]
+  unsafe = true
