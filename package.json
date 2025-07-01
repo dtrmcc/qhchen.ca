@@ -1,0 +1,15 @@
+json{
+  "name": "qinghua-chen-academic",
+  "version": "1.0.0",
+  "description": "Academic website for Dr. Qinghua Chen",
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo --gc --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-github-repo-url"
+  },
+  "author": "Qinghua Chen",
+  "license": "MIT"
+}
