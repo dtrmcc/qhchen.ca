@@ -44,9 +44,14 @@ disableKinds = ["RSS", "sitemap", "robotsTXT"]
   weight = 4
 
 [[menu.main]]
+  name = "My Story"
+  url = "/story/"
+  weight = 5
+
+[[menu.main]]
   name = "CV"
   url = "/uploads/cv.pdf"
-  weight = 5
+  weight = 6
 
 # Permalinks
 [permalinks]
