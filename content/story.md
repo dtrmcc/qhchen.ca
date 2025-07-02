@@ -2,7 +2,9 @@
 title: "My Life Story"
 date: 2025-07-01T16:00:00+08:00
 draft: false
+type: "page"
 layout: "story"
+url: "/story/"
 ---
 
 # My Life Story
