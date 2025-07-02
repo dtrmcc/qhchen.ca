@@ -162,8 +162,49 @@
             margin-bottom: 1rem;
         }
         
+        .card .card-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .card .card-btn:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+        
         .research-interests {
             background: #f8f9fa;
+        }
+        
+        .my-journey {
+            background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(232, 245, 232, 0.1) 100%);
+        }
+        
+        .my-journey h2 {
+            color: #2d5a27;
+        }
+        
+        .my-journey .card {
+            border-left: 4px solid #87ceab;
+        }
+        
+        .my-journey .card h3 {
+            color: #2d5a27;
+        }
+        
+        .my-journey .card-btn {
+            background: #4a7c59;
+        }
+        
+        .my-journey .card-btn:hover {
+            background: #2d5a27;
         }
         
         .tag {
@@ -249,6 +290,7 @@
                 <li><a href="/publication/">Publications</a></li>
                 <li><a href="/research/">Research</a></li>
                 <li><a href="/teaching/">Teaching</a></li>
+                <li><a href="/story/">My Story</a></li>
                 <li><a href="/uploads/cv.pdf">CV</a></li>
             </ul>
         </nav>
@@ -285,6 +327,27 @@
                     <div class="card">
                         <h3>Academic Background</h3>
                         <p>PhD in Education from Simon Fraser University (2022), with academic experiences spanning Canada and Asia, contributing to theoretical developments in critical approaches to language education.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section my-journey">
+            <div class="container">
+                <h2>My Journey</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>My Life Story</h3>
+                        <p>A personal reflection on my journey through educational landscapes and cultural transitions, from Beijing to Victoria to Hong Kong, exploring the intersections of identity, place, and academic purpose.</p>
+                        <a href="/story/" class="card-btn">Read My Story</a>
+                    </div>
+                    <div class="card">
+                        <h3>Academic Philosophy</h3>
+                        <p>My approach to research integrates poststructuralist theory with practical pedagogical applications, bridging critical theory and lived educational experiences to contribute to more just educational environments.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Cultural Transitions</h3>
+                        <p>Exploring how identity is dynamically constructed through interactions with places, people, and ideas across different cultural and academic contexts, from classroom practitioner to researcher.</p>
                     </div>
                 </div>
             </div>

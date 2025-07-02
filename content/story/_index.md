@@ -1,10 +1,8 @@
 ---
 title: "My Life Story"
-date: 2025-07-01T16:00:00+08:00
-draft: false
+date: 2025-01-01
 type: "page"
-layout: "story"
-url: "/story/"
+layout: "single"
 ---
 
 # My Life Story
