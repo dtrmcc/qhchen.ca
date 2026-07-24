@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Qinghua Chen - Academic Portfolio</title>
-    <meta name="description" content="Postdoctoral Fellow specializing in language education and poststructuralist theory">
-    <meta name="author" content="Qinghua Chen">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
     
     <!-- Academic CSS -->
     <style>
@@ -305,8 +305,8 @@
                 </div>
                 <div class="hero-text">
                     <h1>Dr. Qinghua Chen</h1>
-                    <p class="subtitle">Postdoctoral Fellow</p>
-                    <p>Specializing in language education and poststructuralist approaches to identity and power relations in educational contexts. Examining generative AI's impact on language education and teacher agency.</p>
+                    <p class="subtitle">Assistant Professor</p>
+                    <p>Assistant Professor in the English Language and Literature Academic Group at the National Institute of Education, Nanyang Technological University, Singapore, working at the intersection of critical applied linguistics and generative AI in language education.</p>
                     <a href="/uploads/cv.pdf" class="btn">Download CV</a>
                 </div>
             </div>
@@ -318,15 +318,15 @@
                 <div class="grid">
                     <div class="card">
                         <h3>Current Position</h3>
-                        <p>Postdoctoral Fellow at The Education University of Hong Kong, specializing in language education and poststructuralist approaches to identity and power relations in educational contexts.</p>
+                        <p>Assistant Professor, English Language and Literature Academic Group, National Institute of Education, Nanyang Technological University, Singapore.</p>
                     </div>
                     <div class="card">
                         <h3>Research Focus</h3>
-                        <p>My research integrates Foucauldian frameworks with critical perspectives on language teaching, examining generative AI's impact on language education and teacher agency.</p>
+                        <p>Grounded in a Foucauldian, poststructuralist approach to identity and power relations in educational contexts, my research examines how teachers exercise agency and how translanguaging pedagogies are reconfigured as generative AI is integrated into language classrooms.</p>
                     </div>
                     <div class="card">
                         <h3>Academic Background</h3>
-                        <p>PhD in Education from Simon Fraser University (2022), with academic experiences spanning Canada and Asia, contributing to theoretical developments in critical approaches to language education.</p>
+                        <p>PhD in Education (Language, Culture and Literacy) from Simon Fraser University (2022). With academic experience spanning Canada and Asia, I have published in journals including Applied Linguistics, System, Linguistics and Education, and Critical Inquiry in Language Studies.</p>
                     </div>
                 </div>
             </div>
@@ -357,33 +357,24 @@
             <div class="container">
                 <h2>Research Interests</h2>
                 <div style="text-align: center; margin-top: 2rem;">
-                    <span class="tag">Language Education</span>
-                    <span class="tag">Poststructuralist Theory</span>
-                    <span class="tag">Generative AI in Education</span>
-                    <span class="tag">Teacher Agency</span>
-                    <span class="tag">Postcolonial Studies</span>
-                    <span class="tag">Foucauldian Frameworks</span>
-                    <span class="tag">Narrative Inquiry</span>
+                    <span class="tag">Teacher Agency &amp; GenAI</span>
+                    <span class="tag">Translanguaging Pedagogies</span>
+                    <span class="tag">Foucauldian &amp; Poststructuralist Theory</span>
                     <span class="tag">Critical Applied Linguistics</span>
+                    <span class="tag">Teachers as AI Developers</span>
+                    <span class="tag">Narrative Inquiry</span>
+                    <span class="tag">Collaborative Ethnography</span>
+                    <span class="tag">Decolonial Approaches to Language Education</span>
                 </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <h2>Key Projects</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Social Media Analytics Research (SMART)</h3>
-                        <p><strong>Team member</strong> | HKD 5,000,000 | The Education University of Hong Kong</p>
-                    </div>
-                    <div class="card">
-                        <h3>Theorizing Plurilingual Assessment</h3>
-                        <p><strong>Co-investigator</strong> | HKD 3,000,000 | The Education University of Hong Kong</p>
-                    </div>
-                    <div class="card">
-                        <h3>Critical Media Literacy in Teacher Education</h3>
-                        <p><strong>Co-investigator</strong> | CAD 200,000 | Social Sciences and Humanities Research Council of Canada</p>
+                <h2>Research Funding</h2>
+                <div class="grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 2rem auto 0;">
+                    <div class="card" style="text-align: center;">
+                        <p>I am a team member of the 3M Social Media Analytics project.</p>
                     </div>
                 </div>
             </div>
@@ -394,14 +385,14 @@
                 <h2>Contact</h2>
                 <p>Email: <a href="mailto:me@qhchen.ca">me@qhchen.ca</a></p>
                 <p>ORCID: <a href="https://orcid.org/0000-0001-5212-2163" target="_blank">0000-0001-5212-2163</a></p>
-                <p>Institution: The Education University of Hong Kong</p>
+                <p>Institution: National Institute of Education, Nanyang Technological University, Singapore</p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Dr. Qinghua Chen. All rights reserved.</p>
+            <p>{{ .Site.Params.copyright | default "© 2026 All rights reserved" }}</p>
         </div>
     </footer>
 </body>

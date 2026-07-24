@@ -5,8 +5,6 @@ type: "page"
 layout: "single"
 ---
 
-# My Life Story
-
 *A Journey Through Educational Landscapes and Cultural Transitions*
 
 ## Prologue: Reflections at 38
