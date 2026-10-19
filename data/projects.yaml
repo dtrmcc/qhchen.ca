@@ -6,10 +6,7 @@
   paragraphs:
     - "A bilingual web platform in which nursing students in Hong Kong rehearse patient intake and wound-care conversations before clinical placement. After a short knowledge pretest, students hold a spoken dialogue with a simulated patient who responds in Cantonese, English or Mandarin; recordings are kept for instructors to review and give targeted feedback."
     - "It is designed around a simple belief: practice should be safe to fail in, and the teacher stays in the loop."
-  stack: ["Supabase", "Netlify", "Azure Speech", "LLM dialogue", "Web Speech API"]
-  links:
-    - label: "Source on GitHub"
-      url: "https://github.com/dtrmcc/nursing2"
+  stack: ["Supabase (self-hosted)", "Azure Speech", "LLM dialogue", "Web Speech API"]
 - name: "areview"
   status: "In use · open source"
   tagline: "A local-first workstation for reviewing manuscripts, with AI kept on a short leash."
