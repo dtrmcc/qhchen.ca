@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="page"><div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Building as inquiry</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lede">{{ .Params.subtitle }}</p>
+  </div>
+  <div class="prose wide" style="margin-bottom:2.5rem">{{ .Content }}</div>
+  <div class="cards">
+    {{ range .Site.Data.projects }}
+    <article class="card">
+      <span class="status">{{ .status }}</span>
+      <h3>{{ .name }}</h3>
+      <p><strong>{{ .tagline }}</strong></p>
+      {{ range .paragraphs }}<p>{{ . }}</p>{{ end }}
+      {{ with .stack }}<ul class="tags">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      {{ with .links }}<div class="links">{{ range . }}<a class="btn" href="{{ .url }}">{{ .label }}</a>{{ end }}</div>{{ end }}
+    </article>
+    {{ end }}
+  </div>
+</div></div>
+{{ end }}

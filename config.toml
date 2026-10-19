@@ -1,24 +1,25 @@
 baseURL = "https://qhchen.ca"
 languageCode = "en-us"
-title = "Dr. Qinghua Chen - Academic Portfolio"
+title = "Qinghua Chen · Applied linguistics, teacher agency and AI"
 
 # Disable RSS feeds, sitemap, robots.txt, and unused taxonomy pages
-disableKinds = ["RSS", "sitemap", "robotsTXT", "taxonomy", "term"]
+disableKinds = ["RSS", "taxonomy", "term"]
+enableRobotsTXT = true
 
 [params]
   author = "Qinghua Chen"
   email = "me@qhchen.ca"
-  description = "Assistant Professor at the National Institute of Education, Nanyang Technological University, working at the intersection of critical applied linguistics and generative AI in language education"
+  description = "Assistant Professor at NIE, Nanyang Technological University, working on critical applied linguistics, teacher agency and generative AI in language education."
   orcid = "0000-0001-5212-2163"
-  copyright = "© 2026 Dr. Qinghua Chen. All rights reserved."
+  copyright = "© 2026 Qinghua Chen"
 
 [markup.goldmark.renderer]
   unsafe = true
 
 # Menu configuration
 [[menu.main]]
-  name = "Home"
-  url = "/"
+  name = "Research"
+  url = "/research/"
   weight = 1
 
 [[menu.main]]
@@ -27,17 +28,17 @@ disableKinds = ["RSS", "sitemap", "robotsTXT", "taxonomy", "term"]
   weight = 2
 
 [[menu.main]]
-  name = "Research"
-  url = "/research/"
+  name = "Teaching"
+  url = "/teaching/"
   weight = 3
 
 [[menu.main]]
-  name = "Teaching"
-  url = "/teaching/"
+  name = "Development"
+  url = "/development/"
   weight = 4
 
 [[menu.main]]
-  name = "My Story"
+  name = "Story"
   url = "/story/"
   weight = 5
 
@@ -51,3 +52,4 @@ disableKinds = ["RSS", "sitemap", "robotsTXT", "taxonomy", "term"]
   publication = "/publication/:title/"
   research = "/research/:title/"
   teaching = "/teaching/:title/"
+  development = "/development/:title/"

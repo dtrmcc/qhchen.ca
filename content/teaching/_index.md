@@ -1,45 +1,45 @@
 ---
 title: "Teaching"
-date: 2025-01-01
+eyebrow: "In the classroom"
+description: "Courses taught by Qinghua Chen at NIE (NTU), the Education University of Hong Kong, Simon Fraser University and in Beijing."
 type: "page"
 layout: "single"
+wide: true
 ---
+Before research, I was a classroom teacher, first in test preparation and then as head of an English department in Beijing, and that history still shapes how I teach and what I ask of theory.
 
-## Graduate Courses
+## National Institute of Education, NTU (2026–)
 
-- **EDUC711** — Special Topic: Translanguaging, Simon Fraser University
-- **EDUC825** — Second Language Learning and Education, Simon Fraser University
+- **ALS10A**, tutorial groups
+- Developing a new PGDE elective on AI and technology in language teaching
 
----
+## Graduate courses
 
-## Undergraduate Courses
+- **EDUC711** Special Topic: Translanguaging, Simon Fraser University
+- **EDUC825** Second Language Learning and Education, Simon Fraser University
 
-- **ENG3266** — Classroom Discourse Analysis, The Education University of Hong Kong
-- **ENG1376** — English for Academic Purposes 1, The Education University of Hong Kong
-- **ENG1777** — English for Academic Purposes 2, The Education University of Hong Kong
-- **EDUC326** — Creating Positive Learning Communities, Simon Fraser University
-- **EDUC471** — Curriculum Development: Theory and Practice, Simon Fraser University
-- **EDUC100W** — Academic Writing, Simon Fraser University
+## Undergraduate courses
 
----
+- **ENG3266** Classroom Discourse Analysis, The Education University of Hong Kong
+- **ENG1376** English for Academic Purposes 1, The Education University of Hong Kong
+- **ENG1777** English for Academic Purposes 2, The Education University of Hong Kong
+- **EDUC326** Creating Positive Learning Communities, Simon Fraser University
+- **EDUC471** Curriculum Development: Theory and Practice, Simon Fraser University
+- **EDUC100W** Academic Writing, Simon Fraser University
 
-## Other Teaching Experience
+## Earlier teaching
 
-- **2012–2016** — International School Teaching, Beijing 21st Century International School, Beijing, China
-- **2009–2012** — Language Training Teacher, Beijing New Oriental Education and Technology Group (NYSE: EDU), Beijing, China
+- **2012–2016** International school teacher (later head of English), Beijing 21st Century International School
+- **2009–2012** Language training teacher, Beijing New Oriental Education and Technology Group
 
----
+## Teaching awards
 
-## Teaching Excellence Awards
-
-- Outstanding Demo Class Award (2016), Division of Education, Beijing City Municipal Government
-- Second Prize, Xi Hua Cup Classroom Teaching Competition (2012), Award value CNY ¥2,000
+- Outstanding Demo Class Award (2016), Division of Education, Beijing Municipal Government
+- Second Prize, Xi Hua Cup Classroom Teaching Competition (2012)
 - Second Prize, National Teaching Competition (2011), New Oriental Education Group
 
----
+## Professional development workshops
 
-## Professional Development Workshops
-
-- Translanguaging and GenAI in Translation, delivered to student teachers at The University of South China, Hengyang, Hunan, China (November 2024)
-- Translanguaging and GenAI in Language Classroom, delivered to teachers of Beijing 21st Century International School, Beijing, China (July 2024)
-- Traversing Between Academic and Teaching Life, delivered online to teachers of the Brazilian Applied Linguistic Association (December 2020)
+- *Translanguaging and GenAI in Translation*, student teachers, University of South China, Hengyang (November 2024)
+- *Translanguaging and GenAI in the Language Classroom*, teachers of Beijing 21st Century International School (July 2024)
+- *Traversing Between Academic and Teaching Life*, online, Brazilian applied linguistics association (December 2020)

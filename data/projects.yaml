@@ -1,0 +1,23 @@
+# Development projects shown on /development/ and (first two) on the home page.
+# Links: only add a URL once it is confirmed to be public.
+- name: "Nursing communication training (nursing2)"
+  status: "In development"
+  tagline: "An AI virtual patient for nursing students to practise clinical communication."
+  paragraphs:
+    - "A bilingual web platform in which nursing students in Hong Kong rehearse patient intake and wound-care conversations before clinical placement. After a short knowledge pretest, students hold a spoken dialogue with a simulated patient who responds in Cantonese, English or Mandarin; recordings are kept for instructors to review and give targeted feedback."
+    - "It is designed around a simple belief: practice should be safe to fail in, and the teacher stays in the loop."
+  stack: ["Supabase", "Netlify", "Azure Speech", "LLM dialogue", "Web Speech API"]
+  links:
+    - label: "Source on GitHub"
+      url: "https://github.com/dtrmcc/nursing2"
+- name: "Poster Grading"
+  status: "In use · open source"
+  tagline: "A local, AI-assisted tool for marking student work, where the instructor decides."
+  paragraphs:
+    - "Built for grading academic posters and in-class presentations against a rubric. AI suggests marks and drafts feedback from de-identified content only; every mark and every sentence of feedback is confirmed or edited by the instructor, and both the AI suggestion and the final decision are logged so they can be compared."
+    - "Assignments are configuration rather than code: a new rubric is a single YAML file."
+  stack: ["FastAPI", "React", "SQLite", "Docker", "De-identification gate"]
+  links:
+    - label: "Source on GitHub"
+      url: "https://github.com/dtrmcc/poster-grading"
+# - name: "areview"   # TODO: add description and link once confirmed

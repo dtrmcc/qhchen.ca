@@ -1,0 +1,2 @@
+{{- $o := . -}}
+<p class="pub">{{ $o.citation | markdownify }}{{ with $o.doi }}{{ if not (in $o.citation "doi.org") }} <a class="doi" href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}{{ end }}{{ if eq $o.status "in-press" }}<span class="badge">In press</span>{{ else if eq $o.status "under-review" }}<span class="badge">Under review</span>{{ end }}</p>

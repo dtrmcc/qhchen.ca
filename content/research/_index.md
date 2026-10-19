@@ -1,39 +1,35 @@
 ---
 title: "Research"
-date: 2025-01-01
+eyebrow: "What I work on"
+description: "Research on teacher agency, translanguaging, subjectivity and generative AI in language education."
 type: "page"
 layout: "single"
+wide: true
 ---
+My research approaches language education through a critical, poststructuralist lens, drawing on Foucauldian accounts of power, knowledge and subjectivity. My doctoral work at Simon Fraser University examined how recent immigrants from China have their subjectivities reconstituted; the same critical orientation now grounds my work on teacher agency, translanguaging, and the ethical integration of generative AI into language and professional education.
 
-Dr. Chen's research trajectory reflects a sustained engagement with poststructuralist theory, particularly Foucauldian perspectives on power, knowledge, and subjectivity, as the critical lens through which he approaches language education. His doctoral work at Simon Fraser University examined immigrant subjectivity formation through poststructuralist and postcolonial lenses; this critical orientation now grounds his current research program on language teacher agency, translanguaging, and the ethical integration of generative AI into language and professional education.
+## Themes
 
-His recent publications focus on subjectivity reconstitution, decolonial approaches to language education, and the ethical and critical integration of generative AI in educational contexts, including a growing strand of work that treats teachers themselves as designers and developers of classroom AI tools. His work is characterized by innovative methodological approaches, including narrative inquiry, collaborative ethnography, and mixed-methods designs that combine ethnographic case work with teacher perception data, all consistent with a critical, poststructuralist epistemology.
+### Teacher agency in the age of generative AI
+How do teachers exercise agency, and what counts as *teacherness*, when AI tools enter their classrooms? I use ethnographic and mixed-methods designs to follow pedagogical decision-making in practice.
 
----
+### Translanguaging, writing and assessment
+Translingual approaches to academic writing, feedback and assessment for emerging multilingual writers, including plurilingual and AI-mediated assessment in EMI higher education.
 
-## Research Interests
+### Subjectivity, power and decolonial critique
+Foucauldian and postcolonial work on how immigrant, teacher and researcher subjectivities are constituted, and on what decolonizing academic knowledge production asks of us in everyday interaction, desire and fear.
 
-- Language teacher agency in the age of generative AI
-- Translanguaging pedagogies
-- Foucauldian and poststructuralist approaches to identity and power in education
-- Teachers as developers (not merely consumers) of educational AI
-- Critical applied linguistics and decolonial approaches to language education
-- Narrative inquiry and collaborative ethnography
+### Teachers as developers of educational AI
+A teacher-led, open-source approach to educational AI, developed in the Cambridge Elements volume *Teachers as AI Developers* and in the [tools I build](/development/).
 
----
+## Approach
 
-## Research Funding
+Narrative inquiry, collaborative ethnography, duoethnography and discourse analysis, consistent with a critical, poststructuralist epistemology, combined with teacher-perception data where it helps.
 
-I am a team member of the 3M Social Media Analytics project.
+## Collaborative projects
 
----
+- Social Media Analytics Research Teams (SMART), The Education University of Hong Kong, team member (2024–)
+- Theorizing Plurilingual Assessment, The Education University of Hong Kong, co-investigator (2023–)
+- Critical Media Literacy in Teacher Education, SSHRC, co-investigator (2022–)
 
-## Digital Scholarship &amp; Open Science
-
-- GitHub: [github.com/dtrmcc](https://github.com/dtrmcc)
-- AI Teaching Assistant: [chatbase.co](https://www.chatbase.co/chatbot-iframe/GNBxNU11kAHZ4_aq6Hhy9)
-- AI Nurse Training System (in development): [nusring4.netlify.app](https://nusring4.netlify.app)
-
----
-
-*For a full list of publications, please visit the [Publications](/publication/) page.*
+*For the full list of publications, see [Publications](/publication/). Software projects are on the [Development](/development/) page.*

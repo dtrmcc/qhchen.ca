@@ -1,399 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta name="author" content="{{ .Site.Params.author }}">
-    
-    <!-- Academic CSS -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: #f8f9fa;
-            border-bottom: 1px solid #dee2e6;
-            padding: 1rem 0;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #495057;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #007bff;
-        }
-        
-        .hero {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        
-        .hero-content {
-            display: grid;
-            grid-template-columns: 200px 1fr;
-            gap: 3rem;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .hero-image {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        
-        .profile-photo:hover {
-            transform: scale(1.05);
-        }
-        
-        .hero-text {
-            text-align: left;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-        }
-        
-        .hero .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-        
-        .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.85;
-            line-height: 1.7;
-        }
-        
-        .hero .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
-        .hero .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-        }
-        
-        .section {
-            padding: 4rem 0;
-        }
-        
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: #2c3e50;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-4px);
-        }
-        
-        .card h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-        
-        .card .card-btn {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        .card .card-btn:hover {
-            background: #0056b3;
-            transform: translateY(-1px);
-        }
-        
-        .research-interests {
-            background: #f8f9fa;
-        }
-        
-        .my-journey {
-            background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(232, 245, 232, 0.1) 100%);
-        }
-        
-        .my-journey h2 {
-            color: #2d5a27;
-        }
-        
-        .my-journey .card {
-            border-left: 4px solid #87ceab;
-        }
-        
-        .my-journey .card h3 {
-            color: #2d5a27;
-        }
-        
-        .my-journey .card-btn {
-            background: #4a7c59;
-        }
-        
-        .my-journey .card-btn:hover {
-            background: #2d5a27;
-        }
-        
-        .tag {
-            display: inline-block;
-            background: #007bff;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin: 4px;
-        }
-        
-        .contact {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-        }
-        
-        .contact a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        
-        footer {
-            background: #343a40;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2rem;
-            }
-            
-            .hero-text {
-                text-align: center;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .profile-photo {
-                width: 150px;
-                height: 150px;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .profile-photo {
-                width: 120px;
-                height: 120px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav class="container">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/publication/">Publications</a></li>
-                <li><a href="/research/">Research</a></li>
-                <li><a href="/teaching/">Teaching</a></li>
-                <li><a href="/story/">My Story</a></li>
-                <li><a href="/uploads/cv.pdf">CV</a></li>
-            </ul>
-        </nav>
-    </header>
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <img class="portrait" src="/images/profile-photo.jpg" alt="Portrait of Qinghua Chen" width="480" height="600">
+    <div>
+      <p class="eyebrow">Critical applied linguistics · Generative AI · Teacher education</p>
+      <h1>Qinghua Chen</h1>
+      <p class="role"><strong>Assistant Professor</strong>, English Language &amp; Literature Academic Group<br>National Institute of Education, Nanyang Technological University, Singapore</p>
+      <p class="lede">I study how power, knowledge and subjectivity shape what language teachers and learners are able to do, and I build tools with teachers rather than only writing about them. Right now that means asking how teacher agency and translanguaging are being reconfigured as generative AI enters the language classroom.</p>
+      <div class="links">
+        <a class="btn primary" href="/uploads/cv.pdf">Curriculum vitae</a>
+        <a class="btn" href="/publication/">Publications</a>
+        <a class="btn" href="mailto:{{ .Site.Params.email }}">Email</a>
+        <a class="btn" href="https://orcid.org/{{ .Site.Params.orcid }}">ORCID</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <!-- Replace 'your-photo.jpg' with your actual photo filename -->
-                    <img src="/images/profile-photo.jpg" alt="Dr. Qinghua Chen" class="profile-photo">
-                </div>
-                <div class="hero-text">
-                    <h1>Dr. Qinghua Chen</h1>
-                    <p class="subtitle">Assistant Professor</p>
-                    <p>Assistant Professor in the English Language and Literature Academic Group at the National Institute of Education, Nanyang Technological University, Singapore, working at the intersection of critical applied linguistics and generative AI in language education.</p>
-                    <a href="/uploads/cv.pdf" class="btn">Download CV</a>
-                </div>
-            </div>
-        </section>
+<section class="section tint"><div class="wrap">
+  <h2>Currently</h2>
+  <ul class="now">
+    <li><a href="https://doi.org/10.1017/9781009781107"><em>Teachers as AI Developers: Democratizing Educational AI Through Open-Source Innovation and Sustainable Practice</em></a> (Cambridge Elements, 2026), with Yiqi Liu and Angel M. Y. Lin.</li>
+    <li>Settling into the English Language &amp; Literature Academic Group at NIE, which I joined in July 2026.</li>
+    <li>Building open tools for AI-supported teaching and assessment; see <a href="/development/">Development</a>.</li>
+  </ul>
+</div></section>
 
-        <section class="section">
-            <div class="container">
-                <h2>About</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>Current Position</h3>
-                        <p>Assistant Professor, English Language and Literature Academic Group, National Institute of Education, Nanyang Technological University, Singapore.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Research Focus</h3>
-                        <p>Grounded in a Foucauldian, poststructuralist approach to identity and power relations in educational contexts, my research examines how teachers exercise agency and how translanguaging pedagogies are reconfigured as generative AI is integrated into language classrooms.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Academic Background</h3>
-                        <p>PhD in Education (Language, Culture and Literacy) from Simon Fraser University (2022). With academic experience spanning Canada and Asia, I have published in journals including Applied Linguistics, System, Linguistics and Education, and Critical Inquiry in Language Studies.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Research</h2><a class="more" href="/research/">More about my research →</a></div>
+  <div class="grid">
+    <div class="theme"><h3>Teacher agency in the age of GenAI</h3><p>How teachers exercise judgement, resistance and care when AI arrives in their classrooms.</p></div>
+    <div class="theme"><h3>Translanguaging, writing and assessment</h3><p>Translingual approaches to academic writing and plurilingual assessment in multilingual and EMI settings.</p></div>
+    <div class="theme"><h3>Subjectivity, power and decolonial critique</h3><p>Foucauldian and postcolonial readings of how immigrant, teacher and researcher subjectivities are made and remade.</p></div>
+    <div class="theme"><h3>Teachers as developers of AI</h3><p>Open-source, teacher-led design of educational AI as democratic and sustainable practice.</p></div>
+  </div>
+</div></section>
 
-        <section class="section my-journey">
-            <div class="container">
-                <h2>My Journey</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>My Life Story</h3>
-                        <p>A personal reflection on my journey through educational landscapes and cultural transitions, from Beijing to Victoria to Hong Kong, exploring the intersections of identity, place, and academic purpose.</p>
-                        <a href="/story/" class="card-btn">Read My Story</a>
-                    </div>
-                    <div class="card">
-                        <h3>Academic Philosophy</h3>
-                        <p>My approach to research integrates poststructuralist theory with practical pedagogical applications, bridging critical theory and lived educational experiences to contribute to more just educational environments.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Cultural Transitions</h3>
-                        <p>Exploring how identity is dynamically constructed through interactions with places, people, and ideas across different cultural and academic contexts, from classroom practitioner to researcher.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="section tint"><div class="wrap">
+  <div class="section-head"><h2>Selected publications</h2><a class="more" href="/publication/">All publications →</a></div>
+  {{ range where (where .Site.Data.publications "featured" true) "type" "in" (slice "journal" "book") }}{{ partial "pub.html" . }}{{ end }}
+</div></section>
 
-        <section class="section research-interests">
-            <div class="container">
-                <h2>Research Interests</h2>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <span class="tag">Teacher Agency &amp; GenAI</span>
-                    <span class="tag">Translanguaging Pedagogies</span>
-                    <span class="tag">Foucauldian &amp; Poststructuralist Theory</span>
-                    <span class="tag">Critical Applied Linguistics</span>
-                    <span class="tag">Teachers as AI Developers</span>
-                    <span class="tag">Narrative Inquiry</span>
-                    <span class="tag">Collaborative Ethnography</span>
-                    <span class="tag">Decolonial Approaches to Language Education</span>
-                </div>
-            </div>
-        </section>
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Development</h2><a class="more" href="/development/">All projects →</a></div>
+  <div class="cards">
+    {{ range first 2 .Site.Data.projects }}
+    <div class="card"><span class="status">{{ .status }}</span><h3>{{ .name }}</h3><p>{{ .tagline }}</p></div>
+    {{ end }}
+  </div>
+</div></section>
 
-        <section class="section">
-            <div class="container">
-                <h2>Research Funding</h2>
-                <div class="grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 2rem auto 0;">
-                    <div class="card" style="text-align: center;">
-                        <p>I am a team member of the 3M Social Media Analytics project.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:me@qhchen.ca">me@qhchen.ca</a></p>
-                <p>ORCID: <a href="https://orcid.org/0000-0001-5212-2163" target="_blank">0000-0001-5212-2163</a></p>
-                <p>Institution: National Institute of Education, Nanyang Technological University, Singapore</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>{{ .Site.Params.copyright | default "© 2026 All rights reserved" }}</p>
-        </div>
-    </footer>
-</body>
-</html>
+<section class="section tint"><div class="wrap">
+  <blockquote class="quote">
+    <p>&ldquo;Still a month left,&rdquo; I would tell myself in early August. &ldquo;Two weeks remaining,&rdquo; I&rsquo;d reason later, as if these calculations could slow the passage of time.</p>
+    <cite>From <a href="/story/">My story</a>, on leaving Beijing in 2016</cite>
+  </blockquote>
+</div></section>
+{{ end }}
