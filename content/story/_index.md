@@ -3,13 +3,14 @@ title: "My Life Story"
 date: 2025-01-01
 type: "page"
 layout: "single"
+story: true
 ---
 
 *A Journey Through Educational Landscapes and Cultural Transitions*
 
-## Prologue: Reflections at 38
+## Prologue: Reflections
 
-Writing, as I have learned through years of scholarly practice, is itself a method of inquiry—a way to distill and crystallize life's experiences into meaningful narratives. At 38, I find myself at another crossroads, compelled to document this journey not merely as autobiography, but as an exploration of how identity, place, and purpose intersect in the life of an educator and researcher.
+Writing, as I have learned through years of scholarly practice, is itself a method of inquiry—a way to distill and crystallize life's experiences into meaningful narratives. Now, I find myself at another crossroads, compelled to document this journey not merely as autobiography, but as an exploration of how identity, place, and purpose intersect in the life of an educator and researcher.
 
 The act of writing about one's life serves as what we might call an "entropic reduction"—bringing order and structure to the complex tapestry of experiences that shape who we are. Through this reflection, I hope to trace the threads that have woven together my academic pursuits, cultural transitions, and evolving understanding of language, education, and belonging.
 
@@ -82,3 +83,7 @@ How can educational research contribute to more equitable and responsive learnin
 These questions don't have simple answers, but their ongoing exploration continues to shape both my scholarly work and personal understanding of what it means to live thoughtfully across cultures, languages, and academic communities.
 
 The journey from Beijing to Victoria, from practitioner to researcher, from certainty to productive uncertainty, has been one of constant learning and adaptation. It has taught me that identity is not fixed but dynamically constructed through our interactions with places, people, and ideas. Most importantly, it has reinforced my commitment to education as a transformative practice—one that honors both individual growth and collective flourishing.
+
+---
+
+*The rest of the story is still being written. More chapters will find their way here in time.*

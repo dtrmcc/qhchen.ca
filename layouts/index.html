@@ -44,7 +44,7 @@
 <section class="section"><div class="wrap">
   <div class="section-head"><h2>Development</h2><a class="more" href="/development/">All projects →</a></div>
   <div class="cards">
-    {{ range first 2 .Site.Data.projects }}
+    {{ range .Site.Data.projects }}
     <div class="card"><span class="status">{{ .status }}</span><h3>{{ .name }}</h3><p>{{ .tagline }}</p></div>
     {{ end }}
   </div>

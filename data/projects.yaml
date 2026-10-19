@@ -10,6 +10,16 @@
   links:
     - label: "Source on GitHub"
       url: "https://github.com/dtrmcc/nursing2"
+- name: "areview"
+  status: "In use · open source"
+  tagline: "A local-first workstation for reviewing manuscripts, with AI kept on a short leash."
+  paragraphs:
+    - "Peer review means handling other people's unpublished work, so this tool keeps manuscripts on the reviewer's own machine. It parses PDFs and reference lists locally, checks cited works against open bibliographic sources (Crossref, OpenAlex, Semantic Scholar), and can use a local language model for drafting support."
+    - "Each journal project carries its own AI policy (none, local, or remote), and every AI call is written to an audit log with its exact payload, so the reviewer can always see what was sent where."
+  stack: ["FastAPI", "GROBID", "Ollama", "SQLite", "Docker"]
+  links:
+    - label: "Source on GitHub"
+      url: "https://github.com/dtrmcc/paper-review"
 - name: "Poster Grading"
   status: "In use · open source"
   tagline: "A local, AI-assisted tool for marking student work, where the instructor decides."
@@ -20,4 +30,3 @@
   links:
     - label: "Source on GitHub"
       url: "https://github.com/dtrmcc/poster-grading"
-# - name: "areview"   # TODO: add description and link once confirmed

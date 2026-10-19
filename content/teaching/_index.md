@@ -11,7 +11,6 @@ Before research, I was a classroom teacher, first in test preparation and then a
 ## National Institute of Education, NTU (2026–)
 
 - **ALS10A**, tutorial groups
-- Developing a new PGDE elective on AI and technology in language teaching
 
 ## Graduate courses
 
