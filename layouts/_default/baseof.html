@@ -18,10 +18,12 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f4e5f'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='%23fbf8f3'%3EQ%3C/text%3E%3C/svg%3E">
   <link rel="preload" href="/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/site.css?v=2026-10">
+  <link rel="stylesheet" href="/css/site.css?v=2026-10b">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Qinghua Chen","alternateName":"陈庆华","jobTitle":"Assistant Professor","email":"mailto:{{ .Site.Params.email }}","url":"{{ .Site.BaseURL }}","identifier":"https://orcid.org/{{ .Site.Params.orcid }}","sameAs":["https://orcid.org/{{ .Site.Params.orcid }}","https://github.com/dtrmcc"],"worksFor":{"@type":"CollegeOrUniversity","name":"National Institute of Education, Nanyang Technological University","url":"https://www.nie.edu.sg"}}
+  {"@context":"https://schema.org","@type":"Person","name":"Qinghua Chen","alternateName":"陈庆华","jobTitle":"Assistant Professor","email":"mailto:{{ .Site.Params.email }}","url":"{{ .Site.BaseURL }}","identifier":"https://orcid.org/{{ .Site.Params.orcid }}","sameAs":["https://orcid.org/{{ .Site.Params.orcid }}","https://github.com/dtrmcc","https://www.instagram.com/dtrmcc/","https://www.threads.com/@dtrmcc","https://www.xiaohongshu.com/user/profile/654c8caf000000000202ac33"],"worksFor":{"@type":"CollegeOrUniversity","name":"National Institute of Education, Nanyang Technological University","url":"https://www.nie.edu.sg"}}
   </script>
+  {{- block "head" . }}{{ end }}
+  <script src="/js/s.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
