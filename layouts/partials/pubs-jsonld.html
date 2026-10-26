@@ -1,0 +1,21 @@
+{{- /* schema.org list of my publications (search engines link the works to me; co-authors are not parsed).
+       Parsed from the APA citation strings in data/publications.json; entries that do not parse are skipped. */ -}}
+{{- $types := dict "journal" "ScholarlyArticle" "chapter" "Chapter" "book" "Book" -}}
+{{- $items := slice -}}
+{{- range .Site.Data.publications -}}
+  {{- $t := index $types .type -}}
+  {{- if and $t (in (slice "published" "in-press") .status) -}}
+    {{- $c := replace .citation "**" "" -}}{{- $doi := .doi -}}
+    {{- $m := findRESubmatch `^(.+?) \((\d{4})[^)]*\)\.\s+(.+?[.?!])\s+(?:In .+?)?\*([^*]+)\*` $c 1 -}}
+    {{- with $m -}}
+      {{- $g := index . 0 -}}
+      {{- $title := strings.TrimSuffix "." (index $g 3) -}}
+      {{- $o := dict "@type" $t "name" $title "datePublished" (index $g 2) "author" (dict "@type" "Person" "name" "Qinghua Chen" "url" "https://qhchen.ca/") -}}
+      {{- if eq $t "ScholarlyArticle" }}{{ $o = merge $o (dict "isPartOf" (dict "@type" "Periodical" "name" (strings.TrimSuffix "." (index $g 4)))) }}{{ end -}}
+      {{- if eq $t "Chapter" }}{{ $o = merge $o (dict "isPartOf" (dict "@type" "Book" "name" (strings.TrimSuffix "." (index $g 4)))) }}{{ end -}}
+      {{- with $doi }}{{ $o = merge $o (dict "sameAs" (printf "https://doi.org/%s" .) "identifier" (printf "doi:%s" .)) }}{{ end -}}
+      {{- $items = $items | append $o -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" "Publications of Qinghua Chen" "itemListElement" $items | jsonify | safeJS }}</script>

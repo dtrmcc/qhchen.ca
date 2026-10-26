@@ -1,3 +1,4 @@
+{{ define "head" }}{{ partial "pubs-jsonld.html" . }}{{ end }}
 {{ define "main" }}
 {{ $all := .Site.Data.publications }}
 {{ $groups := slice (dict "id" "journal" "title" "Peer-reviewed journal articles") (dict "id" "book" "title" "Books") (dict "id" "chapter" "title" "Book chapters") (dict "id" "review" "title" "Book reviews") (dict "id" "manuscript" "title" "Manuscripts under review or in press") (dict "id" "conference" "title" "Refereed conference presentations") (dict "id" "media" "title" "Media and public writing") }}
